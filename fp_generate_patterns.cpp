@@ -242,8 +242,8 @@ int main(int argc, char* argv[]) {
 			// is in "pattern" state
 
 			// debug
-			std::cout << "pattern recognition" << std::endl;
-			std::cout << "patterndiff: " << (curtime.tv_sec - patternraisetime.tv_sec) * 1000000 + (curtime.tv_usec - patternraisetime.tv_usec) << std::endl;
+			// std::cout << "pattern recognition" << std::endl;
+			// std::cout << "patterndiff: " << (curtime.tv_sec - patternraisetime.tv_sec) * 1000000 + (curtime.tv_usec - patternraisetime.tv_usec) << std::endl;
 
 			if (((curtime.tv_sec - patternraisetime.tv_sec) * 1000000) + (curtime.tv_usec - patternraisetime.tv_usec) > pattern_state_usec )
 							ispattern = 0; // reset pattern period
